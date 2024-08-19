@@ -1,0 +1,24 @@
+.AuthPageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-beige);
+    background: repeating-linear-gradient(transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), repeating-linear-gradient(90deg, transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), #f5f5dc;
+    background-blend-mode: multiply;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.AuthTopHeader {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

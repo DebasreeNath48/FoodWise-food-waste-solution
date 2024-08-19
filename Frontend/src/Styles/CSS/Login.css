@@ -1,0 +1,142 @@
+.loginInnerContainer {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.loginPageContainerWrapper {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 1%;
+
+}
+
+.loginLeftContent {
+    width: calc(100% / 2);
+    height: 100%;
+}
+
+.loginLeftContent>img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.loginRightContent {
+    width: calc(100% / 2);
+    height: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+    overflow-y: scroll;
+}
+
+.loginHeader {
+    text-align: center;
+}
+
+.loginEmailInput {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.loginEmailInput>label {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loginEmailInputField>input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--color-lightBlack);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.loginPasswordInput {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.loginPasswordInput>label {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loginPasswordInputField {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-lightBlack);
+    padding: 0px 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.loginPasswordInputField>input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-lightBlack);
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+.loginButton>button {
+    width: 100%;
+    background: var(--color-orange);
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.loginCreateNew span {
+    color: blue;
+    cursor: pointer;
+}
+
+.loginCreateNew span:hover {
+    text-decoration: underline;
+}
+
+.loginOrgRegister {
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--color-darkBlue);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width:900px) {
+    .loginLeftContent{
+        display: none;
+    }
+    .loginRightContent{
+        width: 100%;
+    }
+}

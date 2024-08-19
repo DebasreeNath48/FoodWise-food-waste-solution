@@ -1,0 +1,104 @@
+.expirationTrackerContainer {
+    background-color: #F5F5DC; /* Beige */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    background: repeating-linear-gradient(transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), repeating-linear-gradient(90deg, transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), #f5f5dc;
+    background-blend-mode: multiply;
+    background-color: #f5f5dc;
+  }
+  
+
+  
+  .expirationTrackerMainContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .expirationTrackerTitle {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #0F0F0F; /* Black */
+  }
+  
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .inputField {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #fff; /* White */
+    color: black;
+  }
+  
+  .addButton {
+    padding: 10px 20px;
+    background-color: #e3772d; /* Orange */
+    color: #FFFFFF; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .addButton:hover {
+    background-color: #d06524;
+  }
+  
+  .foodTable {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .foodTable th,
+  .foodTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .foodTable th {
+    background-color: #0F0F0F; /* Black */
+    color: #FFFFFF; /* White */
+  }
+  
+  .foodTable td {
+    background-color: #FFFFFF; /* White */
+  }
+  
+  .foodTable td.fresh {
+    background-color: #33A6A6; /* Green */
+    color: #FFFFFF; /* White */
+  }
+  
+  .foodTable td.expiringsoon {
+    background-color: #f3ff4a; /* Yellow */
+    color: #0F0F0F; /* Black */
+  }
+  
+  .foodTable td.expired {
+    background-color: #e3542d; /* Red */
+    color: #FFFFFF; /* White */
+  }
+  
+  .foodTable tr:hover {
+    background-color: #f9f9f9;
+  }
+  

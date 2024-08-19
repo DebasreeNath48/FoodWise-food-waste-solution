@@ -1,0 +1,90 @@
+.organisationsContainer {
+    background: repeating-linear-gradient(transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), repeating-linear-gradient(90deg, transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), #f5f5dc;
+    background-blend-mode: multiply;
+    background-color: #f5f5dc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.organisationsMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+}
+
+.organisationsTitle {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #0F0F0F;
+    width: 100%;
+}
+.searchBox {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.orgCard {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orgCard:hover {
+    transform: scale(1.05);
+}
+
+.orgDetails {
+    background-color: #fff;
+    /* White */
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.closeButton {
+    padding: 10px 20px;
+    background-color: #e3772d;
+    /* Orange */
+    color: #FFFFFF;
+    /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.closeButton:hover {
+    background-color: #d06524;
+}

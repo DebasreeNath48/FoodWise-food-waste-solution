@@ -1,0 +1,210 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-beige);
+    background: repeating-linear-gradient(transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), repeating-linear-gradient(90deg, transparent, transparent 10px, #eeeefd 10px, #eeeefd 15px, transparent 15px, transparent 20px, #eeeefd 15px, #eeeefd 40px, transparent 40px, transparent 45px, #eeeefd 45px, #eeeefd 50px, transparent 50px, transparent 80px), #f5f5dc;
+    background-blend-mode: multiply;
+    background-color: #f5f5dc;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    /* background-color: var(--color-darkGreen); */
+}
+
+.homeTopPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    gap: 30px;
+}
+
+.homeTopText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    width: 50%;
+    padding-bottom: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.homeTitleCard {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 100;
+    background-color: var(--color-lightOrange);
+    color: var(--color-orange);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(251, 214, 155, 0.25);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(251, 214, 155, 0.125);
+    display: flex;
+}
+
+.homeMainText {
+    text-align: left;
+    max-width: 100%;
+    font-size: 60px;
+    word-wrap: break-word;
+}
+
+.homeSmallText {
+    color: var(--color-lightBlack);
+    font-size: 20px;
+}
+
+.homeTopImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.homeTopImage>img {
+    width: 100%;
+    filter: drop-shadow(5px 8.5px 16.5px #959595);
+}
+
+.callToActionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+    /* background-color: red; */
+}
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 30vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 1.5px 0.5px 11px 7px #a8a8a8;
+    -moz-box-shadow: 1.5px 0.5px 11px 7px #a8a8a8;
+    box-shadow: 1.5px 0.5px 11px 7px #a8a8a8;
+}
+
+.callToAction:nth-child(even) {
+    background-color: var(--color-beige);
+    color: var(--color-lightBlack);
+}
+
+.callToAction:nth-child(odd) {
+    background-color: var(--color-orange);
+}
+
+.callToActionImage{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.callToActionImage > img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.callToActionText{
+    font-size: 20px;
+}
+
+.mapContainer{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 52vh;
+    /* background-color: var(--color-lightBlack); */
+    border-radius: 20px;
+    position: relative;
+    isolation: isolate;
+}
+
+.mapImage{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.mapImage > img{
+    width: 100%;
+}
+
+.mapText{
+    font-size: 80px;
+    text-align: center;
+}
+@media (max-width:1000px) {
+    .homeMainText {
+        font-size: 40px;
+    }
+    .homeTopText{
+        width: 80%;
+    }
+    .homeSmallText{
+        font-size: 15px;
+    }
+    .callToActionContainer {
+        flex-direction: column;
+    }
+    .callToAction{
+        width: 50%;
+    }
+    .mapText{
+        font-size: 50px;
+    }
+}
+@media (max-width:600px) {
+    .homeMainText {
+        font-size: 20px;
+    }
+    .homeTopPart{
+        flex-direction: column;
+    }
+    .homeTopText{
+        width: 90%;
+    }
+    .homeSmallText{
+        font-size: 15px;
+    }
+    .callToActionContainer {
+        flex-direction: column;
+    }
+    .callToAction{
+        width: 80%;
+    }
+    .mapText{
+        font-size: 30px;
+    }
+    .mapContainer{
+        height: 40vw;
+    }
+
+}

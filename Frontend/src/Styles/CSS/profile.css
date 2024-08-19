@@ -1,0 +1,33 @@
+.userProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .profileTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .profileField {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .fieldLabel {
+    font-weight: bold;
+  }
+  
+  .fieldValue {
+    color: #555;
+  }
+  
