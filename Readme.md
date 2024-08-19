@@ -1,0 +1,1 @@
+# FoodWise - Food Wastage Solution App
